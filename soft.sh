@@ -8,9 +8,9 @@ yum -y install readline-devel ncurses-devel openssl-devel
 #安装
 #进入到local目录
 cd /usr/local     
-wget --no-check-certificate https://raw.githubusercontent.com//mfkd1000/soft/main/softether-vpnserver-v4.38-9760-rtm-2021.08.17-linux-x64-64bit.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com//mfkd1000/soft/main/soft.tar.gz
 #解压tar文件                                
-tar zxvf softether-vpnserver-v4.38-9760-rtm-2021.08.17-linux-x64-64bit.tar.gz
+tar zxvf soft.tar.gz
 #查看文件
 ls   
 # 进入到vpnserver目录                                       
@@ -49,7 +49,7 @@ firewall-cmd --permanent --zone=public --add-port=4500/udp
 firewall-cmd --permanent --zone=public --add-port=500/udp
 firewall-cmd --reload
 cd /usr/local/
-rm -rf softether-vpnserver-v4.38-9760-rtm-2021.08.17-linux-x64-64bit.tar.gz
+rm -rf soft.tar.gz
 cd
 rm -rf soft.sh
 # 重启  
