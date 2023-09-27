@@ -8,7 +8,7 @@ yum -y install readline-devel ncurses-devel openssl-devel
 #安装
 #进入到local目录
 cd /usr/local     
-wget --no-check-certificate https://raw.githubusercontent.com//mfkd1000/soft/main/soft.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/mfkd1000/soft/main/soft.tar.gz
 #解压tar文件                                
 tar zxvf soft.tar.gz
 #查看文件
